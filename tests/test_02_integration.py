@@ -18,7 +18,7 @@ class IntegrationTests(unittest.TestCase):
     def testOk(self):
         users = """1, 1, 32, builder@bob.no
 2, , 100, donald@duck.com"""
-        ads = """1, car, 200000, sold, 1
+        ads = """1, 200000, 1
 2, 4900000, 3"""
         
         userFile = self.writeFile(users)

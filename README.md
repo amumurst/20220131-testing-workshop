@@ -41,10 +41,12 @@ users.txt contains users on the format: UserId(number), favorites(list of adIds 
 ## Commands
 Install: `pip3 install --user pipenv && pipenv install`
 
-run specific test: `pipenv run python -m unittest test_04_property.py`
+run specific test: `pipenv run python -m unittest test/test_04_property.py`
 
 Property test docs: https://hypothesis.readthedocs.io/en/latest/index.html
 
 Mutation test docs: https://mutmut.readthedocs.io/en/latest/
 
-Run mutation tests: `mutmut run --paths-to-mutate 'implementation/utils.py' --tests-dir tests`
+Run mutation tests: `pipenv run mutmut run --paths-to-mutate 'implementation/utils.py' --tests-dir tests`
+
+See mutation tests: `pipenv run mutmut show {number}`
