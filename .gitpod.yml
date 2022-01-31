@@ -4,7 +4,6 @@
 
 tasks:
   - init: pyenv install 3.9.7 && pyenv local 3.9.7 && pip3 install --user pipenv && pipenv install
-    command: python main.py
 vscode:
   extensions:
     - ms-python.python
