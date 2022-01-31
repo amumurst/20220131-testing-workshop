@@ -1,0 +1,4 @@
+1, 1, 32, builder@bob.no
+2, , 100, donald@duck.com
+3, 1, 19, sondre@student.com
+4, 2 3, 12, dole@duck.com
