@@ -14,4 +14,4 @@ class UnitTests(unittest.TestCase):
             def usersWithAdAsFavourite(self, adId: int) -> list[User]:
                 return [userOne, userTwo]
         result = program(TestDatabase(), "1_1")
-        self.assertEqual(result, "Favourited by: builder@bob.no")
+        self.assertEqual(result, "Favorited by: builder@bob.no")

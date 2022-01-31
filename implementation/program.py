@@ -14,4 +14,4 @@ def program(database: Database, userInput: str) -> str:
     if(not len(users)): return "your ad seems to need some love"
 
     users = distinctList(users)
-    return "Favourited by: " + ", ".join([user.email for user in users])
+    return "Favorited by: " + ", ".join([user.email for user in users])

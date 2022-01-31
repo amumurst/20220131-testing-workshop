@@ -19,14 +19,15 @@ while (1):
         continue
 
     ad = possibleAds[0]
-    if(ad[4] != userId):
+    if(ad[2] != userId):
         print("This is not yours!")
         continue
 
-    favourited = [user for user in users if adId in user[2].split(" ") and int(user[3]) >= 18 and user[0] != userId]
-    if(not len(favourited)):
+    favorited = [user for user in users if adId in user[1].split(" ") and int(user[2]) >= 18 and user[0] != userId]
+    if(not len(favorited)):
         print("Your ad seems to need some love")
         continue
 
-    emails = [user[4] for user in set(favourited)]
-    print("Favourited by: " + ", ".join(emails))
+    emails = [user[3] for user in favorited]
+    emails = list(set(emails))
+    print("Favorited by: " + ", ".join(emails))
