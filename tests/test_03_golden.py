@@ -4,7 +4,7 @@ import unittest
 from implementation.program import program
 from implementation.Database import CSVDatabase
 
-class IntegrationTests(unittest.TestCase):
+class GoldenTests(unittest.TestCase):
     def goldenTest(self, number):
         adFile = "tests/test_03_golden/" + number + "_ads.txt"
         userFile = "tests/test_03_golden/" + number + "_users.txt"
